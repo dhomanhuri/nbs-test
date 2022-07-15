@@ -2,7 +2,8 @@ import 'dart:math';
 
 void main() {
   //
-  // rotationArray([1, 2, 3, 4, 5, 6], 2);
+  List Array = rotationArray([1, 2, 3, 4, 5, 6], 2);
+  print(Array);
   // validString('asdasdssadejhdghs');
 }
 
@@ -13,7 +14,7 @@ List rotationArray(List myList, int rotateArray) {
     myList.add(myList[0]);
     myList.removeAt(0);
   }
-  print(myList);
+  // print(myList);
   return myList;
 }
 
@@ -37,10 +38,10 @@ bool validString(String strings) {
   totalMax = total.reduce(max);
   totalMin = total.reduce(min);
   if (totalMax - totalMin <= 1) {
-    print(true);
+    // print(true);
     return true;
   } else {
-    print(false);
+    // print(false);
     return false;
   }
 }
