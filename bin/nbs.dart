@@ -2,14 +2,14 @@ import 'dart:math';
 
 void main() {
   //
-  List Array = rotationArray([1, 2, 3, 4, 5, 6], 2);
+  List Array = rotationArray([1, 2, 3, 4, 5], 12);
   print(Array);
   // validString('asdasdssadejhdghs');
 }
 
 List rotationArray(List myList, int rotateArray) {
-  rotateArray = 12;
-  rotateArray = rotateArray % 6;
+  // rotateArray = 12;
+  rotateArray = rotateArray % myList.length;
   for (int i = 0; i < rotateArray; i++) {
     myList.add(myList[0]);
     myList.removeAt(0);
