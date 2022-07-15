@@ -2,8 +2,8 @@ import 'dart:math';
 
 void main() {
   //
-  List Array = rotationArray([1, 2, 3, 4, 5], 12);
-  print(Array);
+  List array = rotationArray([1, 2, 3, 4, 5], 12);
+  print(array);
   // validString('asdasdssadejhdghs');
 }
 
